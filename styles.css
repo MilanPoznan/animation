@@ -1,0 +1,100 @@
+
+body {
+	background-image: url('background.png');
+	background-size: cover;
+	background-position: 0px -250px;
+}
+
+.wrapper {
+	margin: 50px;
+	width:80%;
+	position:relative;
+}
+
+.robot {
+	/* animation-name: slideRight; */
+	animation-duration: 2s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+	animation-direction: alternate;
+}
+.box {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	float: right;
+
+	/* background-color: #fff; */
+}
+.box p {
+	color: #fff;
+	text-align: center;
+}
+.shop .box {
+	position: relative;
+	background-color: #6B5198;
+}
+.shop .box:after {
+	content: '';
+	position: absolute;
+	bottom: 100px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border: 0 solid transparent;
+	border-right-width: 50px;
+	border-left-width: 50px;
+	border-bottom: 50px solid #3B2464; */
+}
+.shop {
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+.gas-station .box {
+
+}
+.controls {
+	position: absolute;
+	bottom: 50px;left: 50px;
+	display: flex;
+	flex-flow: column;
+}
+.controls-wrapper {
+	display: flex;
+}
+.control {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	background-color: #D4CBBB;
+	border: 1px solid #706C63;
+	margin: 5px;
+}
+.up {
+	margin-left: 60px;
+}
+@keyframes slideRight {
+	0% { transform: translateX(0);}
+	100% { transform: translateX(900px);}
+
+}
+@keyframes slideLeft {
+	0% { transform: translateX(0);}
+	100% { transform: translateX(-900px);}
+
+}
+
+@keyframes slideBottom {
+	0% { transform: translateY(0);}
+	100% { transform: translateY(500px);}
+
+}
+@keyframes slideTop {
+	100% { transform: translateY(0px);}
+
+}
